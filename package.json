@@ -11,5 +11,8 @@
   "devDependencies": {
     "tailwindcss": "^3.4.9",
     "vite": "^5.4.0"
+  },
+  "dependencies": {
+    "three": "^0.167.1"
   }
 }
