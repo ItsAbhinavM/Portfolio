@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <title>Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vanillaStyle.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
-  <nav>
+  <div class="navigation">
     <h1>Abhinav</h1>
     <ul>
       <li>Home</li>
@@ -19,25 +20,30 @@
       <li>Projects</li>
       <li>Contact</li>
     </ul>
-  </nav>
+  </div>
+
   <div class="home">
-    <pre>I'm Abhinav Mohandas,
-Welcome to my Portfolio</pre>
-    <spline-viewer url="https://prod.spline.design/XhESyEVBtOvwF2rG/scene.splinecode"></spline-viewer>
-    <div class="container"></div>
+    <pre>I'm Abhinav Mohandas,<br>Welcome to my Portfolio</pre>
+    <spline-viewer class="spline-viewer-home" url="https://prod.spline.design/XhESyEVBtOvwF2rG/scene.splinecode"></spline-viewer>
+    <div class="container2 w-full"></div>
   </div>
-  <div class="about" style="background-color: beige;">
-    <ul>
-      <li>This</li>
-      <li>is</li>
-      <li>my</li>
-      <li>About</li>
-    </ul>
-    <p>hello there nice to meet you</p>
+
+  <div class="about container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>About Me</h1>
+      </div>
+      <div class="col-md-6">
+        <h1>Timeline</h1>
+      </div>
+    </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script type="module" src="/main.js"></script>
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.6/build/spline-viewer.js"></script>
-
 </body>
 
 </html>
