@@ -9,7 +9,7 @@ render();
 
 function init() {
   // Camera
-  camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
+  camera = new THREE.PerspectiveCamera(45, window.innerWidth / document.body.scrollHeight, 1, 1000);
   camera.position.z = 5;
 
   // Scene
@@ -17,11 +17,18 @@ function init() {
 
   // Renderer
   renderer = new THREE.WebGLRenderer();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(window.innerWidth, document.body.scrollHeight);
   document.getElementById('threejs-container').appendChild(renderer.domElement);
 
   window.addEventListener('resize', onWindowResize, false);
 }
+
+// function onWindowResize() {
+//   camera.aspect = window.innerWidth / document.body.scrollHeight;
+//   camera.updateProjectionMatrix();
+//   renderer.setSize(window.innerWidth, document.body.scrollHeight);
+// }
+
 
 function addSphere() {
   for (let z = -1000; z < 1000; z += 6) {
