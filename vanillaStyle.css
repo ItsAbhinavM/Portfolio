@@ -241,6 +241,7 @@ transition: all 0.7s ease-in-out;
 }
 .rows{
     padding-bottom: 3rem;
+    padding-left: 1rem;
     display: flex;
     /* justify-content: space-between; */
     grid-row-start: auto;

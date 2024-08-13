@@ -1,4 +1,5 @@
 .projects{
+  z-index: 3;
   font-family: "Montserrat", sans-serif;
 }
 .projects h1{
@@ -7,4 +8,71 @@
 .projects h4{
   font-size: 0,5rem;
   color: grey;
+}
+.projectContainer{
+  width: 70%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  background-color: #1c1f2b ;
+  transition: transform .2s;
+  border-style: solid;
+  border-color: red;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+}
+.projectContainer h2{
+  text-align: left;
+  font-weight: 800;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  color: white;
+}
+.projectContainer h4{
+  text-align: left;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  font-weight: 400;
+  color: white;
+}
+.projectContainer img{
+  padding: 2rem;
+}
+.projectContainer a{
+  text-align: left;
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+}
+.readMore{
+  float: right;
+  bottom: 0;
+  right: 0;
+  margin-right: 3rem;
+  width: 20vh;
+  height: 2rem;
+  border-style: solid;
+  border-color: white;
+  border-radius: 1.5rem;
+}
+.projectContainer:hover{
+  transform: scale(1.1);
+  animation: borderColorChange 5s infinite;
+}
+@keyframes borderColorChange {
+  0% {
+    border-color: rgb(136, 8, 8);
+  }
+  25% {
+    border-color: rgb(238, 75, 43);
+  }
+  50% {
+    border-color: rgb(165, 42, 42);
+  }
+  75% {
+    border-color: rgb(204, 85, 0);
+  }
+  100% {
+    border-color: rgb(210, 43, 43);
+  }
 }
