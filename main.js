@@ -26,29 +26,6 @@ function init() {
 function addSphere() {
   for (let z = -1000; z < 1000; z += 6) {
     const random = +(Math.random() * 10).toFixed(0);
-    // let colorValue;
-
-    // switch (random) {
-    //   case 0:
-    //   case 1:
-    //   case 2:
-    //   case 3:
-    //     colorValue = 0x8cde0d;
-    //     break;
-    //   case 4:
-    //   case 5:
-    //   case 6:
-    //     colorValue = 0x00bfff;
-    //     break;
-    //   case 7:
-    //   case 8:
-    //   case 9:
-    //     colorValue = 0x8855f3;
-    //     break;
-    //   default:
-    //     colorValue = 0x8cde0d;
-    //     break;
-    // }
 
     const geometry = new THREE.SphereGeometry(0.5, 32, 32);
     const material = new THREE.MeshBasicMaterial({ color: 'oxffffff' });
@@ -94,3 +71,19 @@ function render() {
   animateStars();
   renderer.render(scene, camera);
 }
+$(window).scroll(function(){				 
+	$('.timeline-container .content').each(function(){
+    	var scrollTop     = $(window).scrollTop(),
+        	elementOffset = $(this).offset().top,
+       		distance      = (elementOffset - scrollTop),
+			    windowHeight  = $(window).height(),
+			    breakPoint    = windowHeight*0.9;
+
+			if(distance > breakPoint) {
+				$(this).addClass("more-padding");	
+			}  if(distance < breakPoint) {
+				$(this).removeClass("more-padding");	
+			}
+	});
+});
+
