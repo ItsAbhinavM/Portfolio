@@ -1,0 +1,205 @@
+@media screen and (max-width: 600px) {
+    .spline-viewer-home {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        transform: translateZ(0);
+        will-change: transform;
+    }
+
+    .home pre {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        z-index: 3;
+        position: relative;
+    }
+
+    .navigation ul {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 0.8rem;
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        text-decoration: none;
+    }
+
+    .navigation h1 {
+        position: fixed;
+        left: 0;
+        font-size: 0.9rem;
+        font-family: "Teko", sans-serif;
+        margin-left: 1.5rem;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navigation {
+        padding-top: 1rem;
+        background-color: transparent;
+        color: white;
+        position: fixed;
+        width: 50vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: flex-start;
+        z-index: 4;
+    }
+
+    /* about section */
+    .about {
+        font-size: 1rem;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about h2 {
+        font-size: 1rem;
+    }
+
+    .about h4,
+    h6 {
+        font-size: 0.8rem;
+    }
+
+    .right-content {
+        margin-left: 15px;
+        margin-top: 1px;
+        display: block;
+        /* margin-bottom: 0.1rem; */
+    }
+
+    .timeline-container .content {
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7 ease-in-out;
+        -ms-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .left-content .more-padding {
+        padding-left: 0;
+        padding-right: 100px;
+    }
+
+    .right-content .more-padding {
+        padding-left: 100px;
+        padding-right: 0;
+    }
+
+    .frameworks {
+        position: relative;
+        left: 0;
+    }
+
+    .frameworks #card {
+        background-color: black;
+        padding-right: 0;
+        height: auto;
+        width: 80px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .frameworks img {
+        background-color: black;
+        height: 35px;
+        width: 25px;
+    }
+
+    .frameworks #card h5 {
+        visibility: hidden;
+        position: absolute;
+        font-size: 0.8rem;
+    }
+
+    .frameworks .rows {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .projects {
+        padding-left: 0;
+        padding-top: 1rem;
+        z-index: 3;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .projects h1 {
+        font-size: 2rem;
+    }
+
+    .projectContainer {
+        width: 90%;
+        height: 21rem;
+        display: flex;
+        float: left;
+        justify-content: center;
+        background-color: #1c1f2b;
+        transition: transform .2s;
+        border-style: solid;
+        border-color: red;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        text-overflow: ellipsis;
+        overflow: visible;
+    }
+
+    .projectContainer h2 {
+        text-align: center;
+        font-weight: 800;
+        padding-right: 60px;
+        padding-top: 25px;
+        color: white;
+    }
+
+    .projectContainer h4 {
+        text-align: left;
+        padding-top: 15px;
+        padding-left: 20px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .projectContainer img {
+        display: none;
+    }
+
+    .projectContainer a {
+        text-align: left;
+        text-decoration: none;
+        font-weight: 400;
+        color: white;
+    }
+
+    .readMore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 15px;
+        width: 150px;
+        height: 2rem;
+        border-style: solid;
+        border-color: white;
+        border-radius: 1.5rem;
+        padding-bottom: 0;
+    }
+    #contacts h1{
+        padding: 0;
+        font-size: 2rem;
+    }
+}

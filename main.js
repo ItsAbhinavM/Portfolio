@@ -60,17 +60,33 @@ function render() {
 }
 
 $(window).scroll(function() {
-  $('.timeline-container .content').each(function() {
-    const scrollTop = $(window).scrollTop(),
-          elementOffset = $(this).offset().top,
-          distance = (elementOffset - scrollTop),
-          windowHeight = $(window).height(),
-          breakPoint = windowHeight * 0.9;
+  // Only apply animation for screens wider than 600px
+  if (window.innerWidth > 600) {
+    $('.timeline-container .content').each(function() {
+      const scrollTop = $(window).scrollTop(),
+            elementOffset = $(this).offset().top,
+            distance = (elementOffset - scrollTop),
+            windowHeight = $(window).height(),
+            breakPoint = windowHeight * 0.9;
 
-    if (distance > breakPoint) {
-      $(this).addClass("more-padding");	
-    } else {
-      $(this).removeClass("more-padding");	
-    }
-  });
+      if (distance <= breakPoint && distance >= 0) {
+        $(this).removeClass("more-padding");	
+      } else {
+        $(this).addClass("more-padding");	
+      }
+    });
+  } else{
+    $('.timeline-container .content').each(function() {
+      const scrollTop = $(window).scrollTop(),
+            elementOffset = $(this).offset().top,
+            distance = (elementOffset - scrollTop),
+            windowHeight = $(window).height(),
+            breakPoint = windowHeight * 0.9;
+
+      if (distance <= breakPoint && distance >= 0) {
+        $(this).removeClass("more-padding");	
+      }
+    });
+  }
 });
+
