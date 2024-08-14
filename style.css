@@ -1,4 +1,6 @@
 .projects{
+  padding-left: 5rem;
+  padding-top: 4rem;
   z-index: 3;
   font-family: "Montserrat", sans-serif;
 }
@@ -75,4 +77,7 @@ h4{
   100% {
     border-color: rgb(210, 43, 43);
   }
+}
+.contact a{
+  text-decoration: none;
 }

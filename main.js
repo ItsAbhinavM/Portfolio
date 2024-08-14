@@ -23,46 +23,26 @@ function init() {
   window.addEventListener('resize', onWindowResize, false);
 }
 
-// function onWindowResize() {
-//   camera.aspect = window.innerWidth / document.body.scrollHeight;
-//   camera.updateProjectionMatrix();
-//   renderer.setSize(window.innerWidth, document.body.scrollHeight);
-// }
-
-
-function addSphere() {
-  for (let z = -1000; z < 1000; z += 6) {
-    const random = +(Math.random() * 10).toFixed(0);
-
-    const geometry = new THREE.SphereGeometry(0.5, 32, 32);
-    const material = new THREE.MeshBasicMaterial({ color: 'oxffffff' });
-    const sphere = new THREE.Mesh(geometry, material);
-    const sphere1 = new THREE.Mesh(geometry, material);
-
-    sphere.position.x = Math.random() * 1000 - 500;
-    sphere.position.y = Math.random() * 1000 - 500;
-
-    sphere1.position.x = Math.random() * 1000 - 500;
-    sphere1.position.y = Math.random() * 1000 - 500;
-
-    sphere.position.z = z;
-    sphere1.position.z = z;
-
-    sphere.scale.x = sphere.scale.y = 1;
-    sphere1.scale.x = sphere1.scale.y = 1;
-
-    scene.add(sphere);
-    scene.add(sphere1);
-
-    stars.push(sphere);
-    stars.push(sphere1);
-  }
+function onWindowResize() {
+  camera.aspect = window.innerWidth / document.body.scrollHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, document.body.scrollHeight);
 }
 
-function onWindowResize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+function addSphere() {
+  const depth = document.body.scrollHeight / window.innerHeight * 1000;
+  for (let z = -depth; z < depth; z += 6) {
+    const geometry = new THREE.SphereGeometry(0.5, 32, 32);
+    const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
+
+    const sphere = new THREE.Mesh(geometry, material);
+    sphere.position.x = Math.random() * 1000 - 500;
+    sphere.position.y = Math.random() * 1000 - 800;
+    sphere.position.z = z;
+
+    scene.add(sphere);
+    stars.push(sphere);
+  }
 }
 
 function animateStars() {
@@ -78,19 +58,19 @@ function render() {
   animateStars();
   renderer.render(scene, camera);
 }
-$(window).scroll(function(){				 
-	$('.timeline-container .content').each(function(){
-    	var scrollTop     = $(window).scrollTop(),
-        	elementOffset = $(this).offset().top,
-       		distance      = (elementOffset - scrollTop),
-			    windowHeight  = $(window).height(),
-			    breakPoint    = windowHeight*0.9;
 
-			if(distance > breakPoint) {
-				$(this).addClass("more-padding");	
-			}  if(distance < breakPoint) {
-				$(this).removeClass("more-padding");	
-			}
-	});
+$(window).scroll(function() {
+  $('.timeline-container .content').each(function() {
+    const scrollTop = $(window).scrollTop(),
+          elementOffset = $(this).offset().top,
+          distance = (elementOffset - scrollTop),
+          windowHeight = $(window).height(),
+          breakPoint = windowHeight * 0.9;
+
+    if (distance > breakPoint) {
+      $(this).addClass("more-padding");	
+    } else {
+      $(this).removeClass("more-padding");	
+    }
+  });
 });
-
