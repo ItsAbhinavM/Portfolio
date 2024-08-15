@@ -1,0 +1,163 @@
+@media (min-width: 601px) and (max-width: 1023px){
+    .spline-viewer-home {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        transform: translateZ(0);
+        will-change: transform;
+    }
+    .home pre {
+        color: white;
+        font-size: 3rem;
+        font-weight: 600;
+        z-index: 3;
+        position: relative;
+    }
+
+    .navigation ul {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        list-style: none;
+        display: flex;
+        gap: 4.8rem;
+        text-decoration: none;
+    }
+
+    .navigation h1 {
+        position: fixed;
+        left: 0;
+        font-size: 1.5rem;
+        font-family: "Teko", sans-serif;
+        margin-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navigation {
+        padding-top: 1rem;
+        background-color: transparent;
+        color: white;
+        position: fixed;
+        width: 70vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: flex-start;
+        z-index: 4;
+    }
+    #aboutMe{
+        padding-left: 0;
+    }
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about h2 {
+        font-size: 1.4rem;
+    }
+
+    .about h4,
+    h6 {
+        font-size: 1rem;
+    }
+    .right-content {
+        margin-left: 15px;
+        margin-top: 1px;
+        display: block;
+    }
+    .right-content::after{
+        margin-left: 15px;
+    }
+    .timeline-container{
+        padding-left: 30px;
+    }
+    .timeline-container .content {
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7 ease-in-out;
+        -ms-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .left-content .more-padding {
+        padding-left: 0;
+        padding-right: 50px;
+    }
+
+    .right-content .more-padding {
+        padding-left: 50px;
+        margin-left: 0;
+    }
+
+    .frameworks {
+        position: relative;
+        left: 0;
+    }
+
+    .frameworks #card {
+        background-color: black;
+        padding-right: 0;
+        height: auto;
+        width: 80px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .frameworks img {
+        background-color: black;
+        height: 45px;
+        width: 35px;
+    }
+
+    .frameworks #card h5 {
+        position: absolute;
+        font-size: 0.8rem;
+    }
+    .left-content::after {
+        content: '';
+        position: absolute;
+        float: left;
+        width: 3px;
+        top: 0;
+        left: 0;
+        background-color: #00ffc3;
+        animation: growBar 4s ease-in-out forwards;
+        transform-origin: top;
+    }
+    .frameworks .rows {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    @keyframes growBar {
+        0% {
+            height: 0%;
+        }
+    
+        100% {
+            height: 65vh;
+        }
+    }
+    .projects img{
+        display: none;
+    }
+    .projects {
+        padding-left: 25px;
+    }
+    .contact h4{
+        font-size: 1rem;
+    }
+    .contact a{
+        padding: 0;
+    }
+}

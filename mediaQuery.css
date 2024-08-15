@@ -78,7 +78,9 @@
         display: block;
         /* margin-bottom: 0.1rem; */
     }
-
+    .content{
+        margin-left: 10px;
+    }
     .timeline-container .content {
         -webkit-transition: all 0.7s ease-in-out;
         -moz-transition: all 0.7 ease-in-out;
@@ -205,7 +207,7 @@
     }
 
     .contact a {
-        padding-left: 0.1rem;
+        padding: 0;
         text-decoration: none;
     }
     #Earth{
