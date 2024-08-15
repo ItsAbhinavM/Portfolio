@@ -198,12 +198,22 @@
         border-radius: 1.5rem;
         padding-bottom: 0;
     }
-    #contacts h1{
+
+    #contacts h1 {
         padding: 0;
         font-size: 2rem;
     }
-    .contact a{
+
+    .contact a {
         padding-left: 0.1rem;
         text-decoration: none;
-      }
+    }
+    #Earth{
+        display: flex;
+        justify-content: center;
+        padding: 30px 60px 0 0!important;
+        height: 200px!important;
+        width: auto!important;
+        z-index: 3;
+    }
 }

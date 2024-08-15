@@ -9,7 +9,7 @@ render();
 
 function init() {
   // Camera
-  camera = new THREE.PerspectiveCamera(45, window.innerWidth / document.body.scrollHeight, 1, 1000);
+  camera = new THREE.PerspectiveCamera(90, window.innerWidth / document.body.scrollHeight, 1, 5000);
   camera.position.z = 5;
 
   // Scene
@@ -31,13 +31,13 @@ function onWindowResize() {
 
 function addSphere() {
   const depth = document.body.scrollHeight / window.innerHeight * 1000;
-  for (let z = -depth; z < depth; z += 6) {
+  for (let z = -depth; z < depth; z += 5) {
     const geometry = new THREE.SphereGeometry(0.5, 32, 32);
     const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
 
     const sphere = new THREE.Mesh(geometry, material);
     sphere.position.x = Math.random() * 1000 - 500;
-    sphere.position.y = Math.random() * 1000 - 800;
+    sphere.position.y = Math.random() * 1000 - 500;
     sphere.position.z = z;
 
     scene.add(sphere);
