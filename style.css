@@ -13,7 +13,7 @@ h4{
 }
 .projectContainer{
   width: 70%;
-  height: 20rem;
+  height: 23rem;
   display: flex;
   justify-content: center;
   background-color: #1c1f2b ;
@@ -25,6 +25,7 @@ h4{
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
 .projectContainer h2{
   text-align: left;
   font-weight: 800;
@@ -49,6 +50,7 @@ h4{
   color: white;
 }
 .readMore{
+  display: none;
   float: right;
   bottom: 0;
   right: 0;
@@ -80,6 +82,11 @@ h4{
     border-color: rgb(210, 43, 43);
   }
 }
+/* .contact {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+} */
 .contact a{
   padding-left: 2rem;
   text-decoration: none;

@@ -99,33 +99,41 @@
         padding-right: 0;
     }
 
-    .frameworks {
+    #frameworks {
+        display: flex;
+        flex-wrap: wrap;
         position: relative;
         left: 0;
     }
 
-    .frameworks #card {
-        background-color: black;
+    #frameworks #card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: black;
         padding-right: 0;
         height: auto;
-        width: 80px;
+        width: auto;
         overflow: hidden;
-        margin: 0 auto;
+        margin: 0 auto; */
     }
 
-    .frameworks img {
-        background-color: black;
-        height: 35px;
-        width: 25px;
+    #frameworks img {
+        background-color: transparent;
+        max-height: 100%;
+        max-width: auto;
     }
-
-    .frameworks #card h5 {
-        visibility: hidden;
+    #imgWrapper{
+        background-color: beige;
+        margin-right: 1px;
+    }
+    #frameworks #card h5 {
+        display: none;
         position: absolute;
         font-size: 0.8rem;
     }
 
-    .frameworks .rows {
+    #frameworks .rows {
         padding-left: 0;
         padding-right: 0;
         display: flex;
@@ -146,7 +154,7 @@
 
     .projectContainer {
         width: 90%;
-        height: 21rem;
+        height: 18rem;
         display: flex;
         float: left;
         justify-content: center;
@@ -186,9 +194,12 @@
         font-weight: 400;
         color: white;
     }
-
+    /* #internalMoreInfo{
+        display: none;
+    } */
     .readMore {
-        display: flex;
+        /* display: inline!important;  */
+        display: none;
         justify-content: center;
         align-items: center;
         margin-top: 10px;
@@ -199,6 +210,10 @@
         border-color: white;
         border-radius: 1.5rem;
         padding-bottom: 0;
+    }
+    .readMore a{
+        color: blue;
+        text-decoration: none;
     }
 
     #contacts h1 {

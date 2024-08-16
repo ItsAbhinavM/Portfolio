@@ -93,7 +93,6 @@ h1 {
     width: 100%;
     height: 100%;
     transform: translateZ(0);
-    will-change: transform;
 }
 
 .about {
@@ -194,6 +193,7 @@ h1 {
 }
 
 .right-content {
+    margin-left: 5px;
     width: 100%;
 }
 
@@ -267,15 +267,19 @@ h1 {
     padding-bottom: 3rem;
     padding-left: 1rem;
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-between; */
     grid-row-start: auto;
+}
+#imgWrapper{
+    width: 4.2rem; margin-right: 3rem; margin-bottom: 1.8rem;
 }
 
 #card {
     transition: transform .2s
 }
 
-.rows #card:hover {
+#frameworks #card:hover {
     transform: scale(1.5);
 }
 

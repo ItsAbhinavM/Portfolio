@@ -97,27 +97,29 @@
         margin-left: 0;
     }
 
-    .frameworks {
+    #frameworks {
+        display: flex;
+        flex-wrap: wrap;
         position: relative;
         left: 0;
     }
 
-    .frameworks #card {
-        background-color: black;
-        padding-right: 0;
-        height: auto;
-        width: 80px;
-        overflow: hidden;
-        margin: 0 auto;
+    #frameworks #card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .frameworks img {
+    #frameworks img {
         background-color: black;
-        height: 45px;
-        width: 35px;
+        max-height: 100%;
+        max-width: 100%;
     }
-
-    .frameworks #card h5 {
+    #imgWrapper{
+        margin-right: 1rem!important;
+    }
+    #frameworks #card h5 {
+        display: none;
         position: absolute;
         font-size: 0.8rem;
     }
@@ -132,7 +134,7 @@
         animation: growBar 4s ease-in-out forwards;
         transform-origin: top;
     }
-    .frameworks .rows {
+    #frameworks .rows {
         padding-left: 0;
         padding-right: 0;
         display: flex;
@@ -148,6 +150,9 @@
             height: 65vh;
         }
     }
+    .projectContainer{
+        height: 18rem!important;
+    }
     .projects img{
         display: none;
     }
@@ -159,5 +164,22 @@
     }
     .contact a{
         padding: 0;
+    }
+    .readMore{
+        display: none;
+    }
+}
+@media (min-width: 1100px) and (max-width: 1280px){
+    #horizontalImage{
+        /* display: none; */
+        height: 220px;
+        width: 300px;
+    }
+    .projectContainer{
+        height: 24rem;
+    }
+    #securix{
+        height: 220px;
+        width: 210px;
     }
 }
