@@ -1,4 +1,4 @@
-@media (min-width: 601px) and (max-width: 1023px){
+@media (min-width: 601px) and (max-width: 1023px) {
     .spline-viewer-home {
         position: absolute;
         top: 0;
@@ -9,6 +9,7 @@
         transform: translateZ(0);
         will-change: transform;
     }
+
     .home pre {
         color: white;
         font-size: 3rem;
@@ -53,9 +54,11 @@
         justify-content: flex-start;
         z-index: 4;
     }
-    #aboutMe{
+
+    #aboutMe {
         padding-left: 0;
     }
+
     .about h1 {
         font-size: 2rem;
     }
@@ -68,28 +71,23 @@
     h6 {
         font-size: 1rem;
     }
+
     .right-content {
         margin-left: 15px;
         margin-top: 1px;
         display: block;
     }
-    .right-content::after{
-        margin-left: 15px;
-    }
-    .timeline-container{
+
+    .timeline-container {
         padding-left: 30px;
     }
+
     .timeline-container .content {
         -webkit-transition: all 0.7s ease-in-out;
         -moz-transition: all 0.7 ease-in-out;
         -ms-transition: all 0.7s ease-in-out;
         -o-transition: all 0.7s ease-in-out;
         transition: all 0.7s ease-in-out;
-    }
-
-    .left-content .more-padding {
-        padding-left: 0;
-        padding-right: 50px;
     }
 
     .right-content .more-padding {
@@ -115,25 +113,17 @@
         max-height: 100%;
         max-width: 100%;
     }
-    #imgWrapper{
-        margin-right: 1rem!important;
+
+    #imgWrapper {
+        margin-right: 1rem !important;
     }
+
     #frameworks #card h5 {
         display: none;
         position: absolute;
         font-size: 0.8rem;
     }
-    .left-content::after {
-        content: '';
-        position: absolute;
-        float: left;
-        width: 3px;
-        top: 0;
-        left: 0;
-        background-color: #00ffc3;
-        animation: growBar 4s ease-in-out forwards;
-        transform-origin: top;
-    }
+
     #frameworks .rows {
         padding-left: 0;
         padding-right: 0;
@@ -141,44 +131,53 @@
         flex-wrap: wrap;
         justify-content: start;
     }
+
     @keyframes growBar {
         0% {
             height: 0%;
         }
-    
+
         100% {
             height: 65vh;
         }
     }
-    .projectContainer{
-        height: 18rem!important;
+
+    .projectContainer {
+        height: 18rem !important;
     }
-    .projects img{
+
+    .projects img {
         display: none;
     }
+
     .projects {
         padding-left: 25px;
     }
-    .contact h4{
+
+    .contact h4 {
         font-size: 1rem;
     }
-    .contact a{
+
+    .contact a {
         padding: 0;
     }
-    .readMore{
+
+    .readMore {
         display: none;
     }
 }
-@media (min-width: 1100px) and (max-width: 1280px){
-    #horizontalImage{
-        /* display: none; */
+
+@media (min-width: 1100px) and (max-width: 1280px) {
+    #horizontalImage {
         height: 220px;
         width: 300px;
     }
-    .projectContainer{
+
+    .projectContainer {
         height: 24rem;
     }
-    #securix{
+
+    #securix {
         height: 220px;
         width: 210px;
     }

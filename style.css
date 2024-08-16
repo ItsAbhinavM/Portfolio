@@ -1,22 +1,25 @@
-.projects{
+.projects {
   padding-left: 5rem;
   padding-top: 4rem;
   z-index: 3;
   font-family: "Montserrat", sans-serif;
 }
-.projects h1{
+
+.projects h1 {
   font-size: 4rem;
 }
-h4{
-  font-size: 0,5rem;
+
+h4 {
+  font-size: 0, 5rem;
   color: grey;
 }
-.projectContainer{
+
+.projectContainer {
   width: 70%;
   height: 23rem;
   display: flex;
   justify-content: center;
-  background-color: #1c1f2b ;
+  background-color: #1c1f2b;
   transition: transform .2s;
   border-style: solid;
   border-color: red;
@@ -26,30 +29,34 @@ h4{
   overflow: hidden;
 }
 
-.projectContainer h2{
+.projectContainer h2 {
   text-align: left;
   font-weight: 800;
   padding-left: 2rem;
   padding-top: 2rem;
   color: white;
 }
-.projectContainer h4{
+
+.projectContainer h4 {
   text-align: left;
   padding-top: 1.5rem;
   padding-left: 2rem;
   font-weight: 400;
   color: white;
 }
-.projectContainer img{
+
+.projectContainer img {
   padding: 2rem;
 }
-.projectContainer a{
+
+.projectContainer a {
   text-align: left;
   text-decoration: none;
   font-weight: 400;
   color: white;
 }
-.readMore{
+
+.readMore {
   display: none;
   float: right;
   bottom: 0;
@@ -61,33 +68,35 @@ h4{
   border-color: white;
   border-radius: 1.5rem;
 }
-.projectContainer:hover{
+
+.projectContainer:hover {
   transform: scale(1.1);
   animation: borderColorChange 5s infinite;
 }
+
 @keyframes borderColorChange {
   0% {
     border-color: rgb(136, 8, 8);
   }
+
   25% {
     border-color: rgb(238, 75, 43);
   }
+
   50% {
     border-color: rgb(165, 42, 42);
   }
+
   75% {
     border-color: rgb(204, 85, 0);
   }
+
   100% {
     border-color: rgb(210, 43, 43);
   }
 }
-/* .contact {
-  position: sticky;
-  bottom: 0;
-  left: 0;
-} */
-.contact a{
+
+.contact a {
   padding-left: 2rem;
   text-decoration: none;
 }

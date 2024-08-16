@@ -59,32 +59,32 @@ function render() {
   renderer.render(scene, camera);
 }
 
-$(window).scroll(function() {
-  // Only apply animation for screens wider than 600px
+$(window).scroll(function () {
+
   if (window.innerWidth > 600) {
-    $('.timeline-container .content').each(function() {
+    $('.timeline-container .content').each(function () {
       const scrollTop = $(window).scrollTop(),
-            elementOffset = $(this).offset().top,
-            distance = (elementOffset - scrollTop),
-            windowHeight = $(window).height(),
-            breakPoint = windowHeight * 0.9;
+        elementOffset = $(this).offset().top,
+        distance = (elementOffset - scrollTop),
+        windowHeight = $(window).height(),
+        breakPoint = windowHeight * 0.9;
 
       if (distance <= breakPoint && distance >= 0) {
-        $(this).removeClass("more-padding");	
+        $(this).removeClass("more-padding");
       } else {
-        $(this).addClass("more-padding");	
+        $(this).addClass("more-padding");
       }
     });
-  } else{
-    $('.timeline-container .content').each(function() {
+  } else {
+    $('.timeline-container .content').each(function () {
       const scrollTop = $(window).scrollTop(),
-            elementOffset = $(this).offset().top,
-            distance = (elementOffset - scrollTop),
-            windowHeight = $(window).height(),
-            breakPoint = windowHeight * 0.9;
+        elementOffset = $(this).offset().top,
+        distance = (elementOffset - scrollTop),
+        windowHeight = $(window).height(),
+        breakPoint = windowHeight * 0.9;
 
       if (distance <= breakPoint && distance >= 0) {
-        $(this).removeClass("more-padding");	
+        $(this).removeClass("more-padding");
       }
     });
   }
